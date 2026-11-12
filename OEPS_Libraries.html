@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OEPS - Libraries Used</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8fafc; padding: 40px; }
+  h1 { font-size: 28px; color: #111827; margin-bottom: 6px; }
+  h2 { font-size: 20px; color: #22C55E; margin: 28px 0 12px; }
+  .subtitle { color: #6B7280; font-size: 14px; margin-bottom: 28px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 20px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  th { background: #111827; color: #fff; padding: 12px 16px; text-align: left; font-size: 13px; font-weight: 700; }
+  td { padding: 10px 16px; font-size: 13px; color: #374151; border-bottom: 1px solid #f3f4f6; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f0fdf4; }
+  .lib { font-weight: 700; color: #111827; }
+  .ver { color: #6B7280; font-family: monospace; font-size: 12px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+  .frontend { background: #DBEAFE; color: #1E40AF; }
+  .backend { background: #DCFCE7; color: #166534; }
+  .service { background: #FEF3C7; color: #92400E; }
+  .section { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .section-icon { width: 32px; height: 32px; border-radius: 8px; display: grid; place-items: center; font-size: 16px; }
+  .section-icon.fe { background: #DBEAFE; }
+  .section-icon.be { background: #DCFCE7; }
+  .section-icon.sv { background: #FEF3C7; }
+  .footer { margin-top: 20px; font-size: 12px; color: #9CA3AF; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>OEPS - Online Exam Proctoring System</h1>
+<p class="subtitle">Libraries & Technologies Used</p>
+
+<div class="section">
+  <div class="section-icon fe">&#9881;</div>
+  <h2 style="margin:0">Frontend (React)</h2>
+</div>
+<table>
+  <tr><th>Library</th><th>Version</th><th>Purpose</th></tr>
+  <tr><td class="lib">React</td><td class="ver">19.2.0</td><td>UI framework</td></tr>
+  <tr><td class="lib">React DOM</td><td class="ver">19.2.0</td><td>React DOM rendering</td></tr>
+  <tr><td class="lib">React Router DOM</td><td class="ver">7.12.0</td><td>Page routing & navigation</td></tr>
+  <tr><td class="lib">Axios</td><td class="ver">1.13.2</td><td>HTTP API calls</td></tr>
+  <tr><td class="lib">Supabase JS</td><td class="ver">2.93.1</td><td>Supabase database client</td></tr>
+  <tr><td class="lib">face-api.js</td><td class="ver">0.22.2</td><td>Face detection & recognition (login/exam verification)</td></tr>
+  <tr><td class="lib">MediaPipe Tasks Vision</td><td class="ver">0.10.32</td><td>Face/hand landmark detection (exam proctoring)</td></tr>
+  <tr><td class="lib">Tesseract.js</td><td class="ver">7.0.0</td><td>OCR &mdash; text extraction from images</td></tr>
+  <tr><td class="lib">pdfjs-dist</td><td class="ver">5.5.207</td><td>PDF parsing & text extraction</td></tr>
+  <tr><td class="lib">Recharts</td><td class="ver">3.8.0</td><td>Charts (student/teacher dashboards)</td></tr>
+  <tr><td class="lib">jsPDF</td><td class="ver">4.2.1</td><td>PDF generation (result export)</td></tr>
+  <tr><td class="lib">jsPDF AutoTable</td><td class="ver">5.0.7</td><td>PDF table generation</td></tr>
+  <tr><td class="lib">Hello Pangea DnD</td><td class="ver">18.0.1</td><td>Drag & drop (question reordering)</td></tr>
+  <tr><td class="lib">FontAwesome Free</td><td class="ver">7.1.0</td><td>Icons</td></tr>
+  <tr><td class="lib">Vite</td><td class="ver">7.2.4</td><td>Build tool & dev server</td></tr>
+</table>
+
+<div class="section">
+  <div class="section-icon be">&#9889;</div>
+  <h2 style="margin:0">Backend (Node.js)</h2>
+</div>
+<table>
+  <tr><th>Library</th><th>Version</th><th>Purpose</th></tr>
+  <tr><td class="lib">Express</td><td class="ver">5.2.1</td><td>Web server framework</td></tr>
+  <tr><td class="lib">Supabase JS</td><td class="ver">2.90.1</td><td>Supabase database client</td></tr>
+  <tr><td class="lib">Google Generative AI</td><td class="ver">0.24.1</td><td>Google Gemini AI (fallback)</td></tr>
+  <tr><td class="lib">Groq SDK</td><td class="ver">1.1.2</td><td>Groq AI &mdash; Llama 3.3 (primary AI for chat/vision)</td></tr>
+  <tr><td class="lib">bcrypt</td><td class="ver">6.0.0</td><td>Password hashing</td></tr>
+  <tr><td class="lib">jsonwebtoken</td><td class="ver">9.0.3</td><td>JWT authentication</td></tr>
+  <tr><td class="lib">cors</td><td class="ver">2.8.5</td><td>Cross-origin requests</td></tr>
+  <tr><td class="lib">compression</td><td class="ver">1.8.1</td><td>Gzip response compression</td></tr>
+  <tr><td class="lib">dotenv</td><td class="ver">17.2.3</td><td>Environment variables</td></tr>
+  <tr><td class="lib">express-rate-limit</td><td class="ver">8.2.1</td><td>API rate limiting</td></tr>
+  <tr><td class="lib">Nodemailer</td><td class="ver">8.0.3</td><td>Email sending (password reset)</td></tr>
+  <tr><td class="lib">Nodemon</td><td class="ver">3.1.11</td><td>Dev auto-restart</td></tr>
+</table>
+
+<div class="section">
+  <div class="section-icon sv">&#9729;</div>
+  <h2 style="margin:0">External Services</h2>
+</div>
+<table>
+  <tr><th>Service</th><th>Usage</th></tr>
+  <tr><td class="lib">Supabase</td><td>Database (PostgreSQL) + Storage (photos, recordings, logs)</td></tr>
+  <tr><td class="lib">Google Gemini API</td><td>AI fallback for question generation</td></tr>
+  <tr><td class="lib">Groq API</td><td>Primary AI (Llama 3.3 70B text + Llama 3.2 90B vision)</td></tr>
+</table>
+
+<div class="footer">OEPS &mdash; Online Exam Proctoring System &bull; 2025</div>
+
+</body>
+</html>

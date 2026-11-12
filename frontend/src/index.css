@@ -1,0 +1,288 @@
+/* Font loaded via index.html <link> for non-blocking render */
+
+/* ================================================================
+   LIGHT THEME (default)
+   ================================================================ */
+:root {
+  /* Core Surfaces */
+  --bg-page: #F4F6F8;
+  --bg-card: rgba(255, 255, 255, 0.70);
+  --bg-card-solid: #FFFFFF;
+  --bg-card-nested: rgba(249, 250, 251, 0.60);
+  --bg-input: rgba(255, 255, 255, 0.80);
+  --bg-elevated: rgba(255, 255, 255, 0.85);
+
+  /* Text */
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --text-on-primary: #022C22;
+  --text-on-danger: #FFFFFF;
+
+  /* Borders */
+  --border-default: rgba(229, 231, 235, 0.80);
+  --border-light: rgba(243, 244, 246, 0.60);
+  --border-glass: rgba(255, 255, 255, 0.30);
+
+  /* Primary (Green) */
+  --primary: #22C55E;
+  --primary-hover: #16A34A;
+  --primary-light: #DCFCE7;
+  --primary-light-text: #166534;
+  --primary-bg: #ECFDF5;
+  --primary-bg-text: #065F46;
+
+  /* Danger (Red) */
+  --danger: #DC2626;
+  --danger-hover: #B91C1C;
+  --danger-light: #FEE2E2;
+  --danger-light-text: #991B1B;
+  --danger-bg: #FEF2F2;
+
+  /* Warning (Amber) */
+  --warning: #F59E0B;
+  --warning-light: #FEF3C7;
+  --warning-light-text: #92400E;
+  --warning-border: #FDE68A;
+
+  /* Info (Blue) */
+  --info: #3B82F6;
+  --info-light: #DBEAFE;
+  --info-light-text: #1D4ED8;
+
+  /* DogAuth-Specific */
+  --dogauth-dark: #243946;
+  --dogauth-dark-hover: #495e6b;
+  --dogauth-grad-start: #f9a743;
+  --dogauth-grad-end: #f9db5f;
+  --dogauth-bone: #fac555;
+  --dogauth-label-bg: #fff;
+  --dogauth-label-border: #ced4da;
+
+  /* Glassmorphism */
+  --glass-blur: 18px;
+  --glass-saturation: 180%;
+  --glass-bg: rgba(255, 255, 255, 0.40);
+  --glass-border: rgba(255, 255, 255, 0.50);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  --glass-shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.08);
+
+  /* Page Gradient */
+  --page-gradient: linear-gradient(135deg, #e0f2e9 0%, #f0fdf4 20%, #e0f7fa 45%, #f5f3ff 70%, #fef3c7 100%);
+  --page-orb-1: rgba(34, 197, 94, 0.20);
+  --page-orb-2: rgba(59, 130, 246, 0.14);
+  --page-orb-3: rgba(245, 158, 11, 0.10);
+
+  /* Role Badges */
+  --role-admin-bg: #E8F0FE;
+  --role-admin-text: #1A73E8;
+  --role-teacher-bg: #E6F4EA;
+  --role-teacher-text: #137333;
+  --role-student-bg: #FEF7E0;
+  --role-student-text: #B06000;
+
+  /* Misc */
+  --scrollbar-track: #F3F4F6;
+  --scrollbar-thumb: #D1D5DB;
+  --focus-ring: rgba(34, 197, 94, 0.40);
+  --overlay: rgba(0, 0, 0, 0.50);
+}
+
+/* ================================================================
+   DARK THEME  — clean, dark dashboard (Shipd-inspired)
+   ================================================================ */
+[data-theme="dark"] {
+  /* Core Surfaces */
+  --bg-page: #0d1117;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-solid: #161b22;
+  --bg-card-nested: rgba(255, 255, 255, 0.03);
+  --bg-input: rgba(255, 255, 255, 0.06);
+  --bg-elevated: rgba(255, 255, 255, 0.05);
+
+  /* Text */
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  --text-on-primary: #022C22;
+  --text-on-danger: #FFFFFF;
+
+  /* Borders */
+  --border-default: rgba(48, 54, 61, 0.80);
+  --border-light: rgba(48, 54, 61, 0.40);
+  --border-glass: rgba(48, 54, 61, 0.50);
+
+  /* Primary — ORIGINAL green, same as light mode */
+  --primary: #22C55E;
+  --primary-hover: #16A34A;
+  --primary-light: rgba(34, 197, 94, 0.15);
+  --primary-light-text: #6EE7B7;
+  --primary-bg: rgba(34, 197, 94, 0.08);
+  --primary-bg-text: #A7F3D0;
+
+  /* Danger — ORIGINAL red, same as light mode */
+  --danger: #DC2626;
+  --danger-hover: #B91C1C;
+  --danger-light: rgba(220, 38, 38, 0.15);
+  --danger-light-text: #FCA5A5;
+  --danger-bg: rgba(220, 38, 38, 0.10);
+
+  /* Warning */
+  --warning: #F59E0B;
+  --warning-light: rgba(245, 158, 11, 0.12);
+  --warning-light-text: #FDE68A;
+  --warning-border: rgba(253, 230, 138, 0.18);
+
+  /* Info */
+  --info: #3B82F6;
+  --info-light: rgba(59, 130, 246, 0.12);
+  --info-light-text: #93C5FD;
+
+  /* DogAuth — not used (auth pages are always light) */
+  --dogauth-dark: #243946;
+  --dogauth-dark-hover: #495e6b;
+  --dogauth-grad-start: #f9a743;
+  --dogauth-grad-end: #f9db5f;
+  --dogauth-bone: #fac555;
+  --dogauth-label-bg: #fff;
+  --dogauth-label-border: #ced4da;
+
+  /* Glassmorphism — frosted glass on dark */
+  --glass-blur: 20px;
+  --glass-saturation: 120%;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 4px 24px rgba(0, 0, 0, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --glass-shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.40), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+  /* Page Gradient — dark with subtle color depth for glass visibility */
+  --page-gradient: linear-gradient(160deg, #0d1117 0%, #112030 35%, #0d1117 65%, #1a1028 100%);
+  --page-orb-1: rgba(34, 197, 94, 0.06);
+  --page-orb-2: rgba(59, 130, 246, 0.05);
+  --page-orb-3: rgba(139, 92, 246, 0.04);
+
+  /* Role Badges */
+  --role-admin-bg: rgba(59, 130, 246, 0.15);
+  --role-admin-text: #93C5FD;
+  --role-teacher-bg: rgba(34, 197, 94, 0.15);
+  --role-teacher-text: #6EE7B7;
+  --role-student-bg: rgba(245, 158, 11, 0.15);
+  --role-student-text: #FDE68A;
+
+  /* Misc */
+  --scrollbar-track: #161b22;
+  --scrollbar-thumb: #30363d;
+  --focus-ring: rgba(34, 197, 94, 0.40);
+  --overlay: rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================================
+   GLOBAL RESETS & BASE STYLES
+   ================================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.4s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* ================================================================
+   THEMED PAGE BACKGROUND (with ambient orbs)
+   ================================================================ */
+.themed-page {
+  min-height: 100vh;
+  background: var(--page-gradient);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.themed-page::before,
+.themed-page::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+.themed-page::before {
+  width: 500px;
+  height: 500px;
+  background: var(--page-orb-1);
+  top: -100px;
+  right: -100px;
+}
+
+.themed-page::after {
+  width: 400px;
+  height: 400px;
+  background: var(--page-orb-2);
+  bottom: -50px;
+  left: -50px;
+}
+
+.themed-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================================================================
+   SCROLLBAR
+   ================================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ================================================================
+   GLOBAL KEYFRAMES
+   ================================================================ */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
